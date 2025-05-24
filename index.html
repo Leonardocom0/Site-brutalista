@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORTES</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORTES</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <h1>FORTES</h1>
-        <nav>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-            <a href="#sobre">Sobre</a>
-        </nav>
-    </header>
+  <header>
+    <img src="img/fortes_logo.jpg" alt="Logo Fortes" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <section id="home" class="home">
+    <h1>FORTES</h1>
+    <p>Entre becos e algoritmos. Uma anomalia elegante, letal, obcecada.</p>
+  </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <p>Detalhes dos seus projetos ou portfólio.</p>
-        </section>
+  <section id="projetos" class="projetos">
+    <h2>PROJETOS</h2>
+    <div class="card">
+      <img src="img/itens.jpg" alt="Projeto 1">
+      <h3>Projeto em Destaque</h3>
+      <p>Criações que desafiam a lógica e os padrões.</p>
+    </div>
+  </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Informações de contato, redes sociais ou e-mail.</p>
-        </section>
+  <section id="sobre" class="sobre">
+    <h2>SOBRE</h2>
+    <div class="sobre-content">
+      <img src="img/sobre.jpg" alt="Sobre Fortes">
+      <p>
+        Um menino observa, silencioso, o mundo desmoronar em câmera lenta.
+        Mãos sujas de graxa. Copos quebrados no chão. Discussões abafadas pela parede fina.
+        O cheiro de álcool misturado com o cheiro metálico da oficina.<br><br>
+        Crescer foi entender que o mundo é uma trama mal escrita para quem aceita os papéis secundários.
+        FORTES não nasceu. Foi arquitetado.<br><br>
+        Entre becos e algoritmos. Entre música, códigos, livros proibidos e planilhas.
+        Se tornou aquilo que o mundo não queria que ele fosse: uma anomalia elegante, letal, obcecada.
+      </p>
+    </div>
+  </section>
 
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <div class="sobre-container">
-                <img src="img/sobre.jpg" alt="Imagem Sobre">
-                <div class="sobre-texto">
-                    <p>
-                        Um menino observa, silencioso, o mundo desmoronar em câmera lenta. Mãos sujas de graxa. Copos quebrados no chão. Discussões abafadas pela parede fina. O cheiro de álcool misturado com o cheiro metálico da oficina.
-                        <br><br>
-                        Crescer foi entender que o mundo é uma trama mal escrita para quem aceita os papéis secundários. FORTES não nasceu. Foi arquitetado. Entre becos e algoritmos. Entre música, códigos, livros proibidos e planilhas.
-                        <br><br>
-                        Se tornou aquilo que o mundo não queria que ele fosse: uma anomalia elegante, letal, obcecada.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <footer>
+    <p>&copy; 2025 FORTES. Todos os direitos reservados.</p>
+  </footer>
 
-    </main>
-
-    <footer>
-        <p>&copy; 2025 FORTES. Todos os direitos reservados.</p>
-    </f
+</body>
+</html>
