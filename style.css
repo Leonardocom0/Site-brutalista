@@ -1,0 +1,119 @@
+/* Fonte */
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  cursor: crosshair;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Sections */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 60px 0;
+  border-bottom: 2px solid #000;
+}
+
+/* SOBRE */
+.sobre-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre-container img {
+  width: 500px;
+  max-width: 100%;
+  border: 4px solid #000;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto p {
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+/* PROJETOS E CONTATO */
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-top: 4px solid #fff;
+}
+
+/* Efeito glitch no título */
+header h1:hover {
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
