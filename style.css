@@ -1,8 +1,16 @@
-/* Fonte */
-body {
-  font-family: 'Space Mono', monospace;
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&family=Space+Mono&display=swap');
+
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Space Mono', monospace;
   background-color: #fff;
   color: #000;
   cursor: crosshair;
@@ -15,12 +23,14 @@ header {
   padding: 20px;
   text-align: center;
   border-bottom: 4px solid #fff;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header h1 {
   margin: 0;
   font-size: 4rem;
   letter-spacing: 2px;
+  font-weight: 300; /* Fonte mais fina */
 }
 
 nav {
@@ -39,7 +49,7 @@ nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
-/* Sections */
+/* Main */
 main {
   max-width: 1200px;
   margin: 40px auto;
@@ -49,6 +59,11 @@ main {
 section {
   padding: 60px 0;
   border-bottom: 2px solid #000;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 /* SOBRE */
@@ -74,12 +89,6 @@ section {
   font-size: 1.2rem;
 }
 
-/* PROJETOS E CONTATO */
-h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
 /* Footer */
 footer {
   background-color: #000;
@@ -89,7 +98,7 @@ footer {
   border-top: 4px solid #fff;
 }
 
-/* Efeito glitch no título */
+/* Efeito Glitch no título */
 header h1:hover {
   animation: glitch 0.3s infinite;
 }
