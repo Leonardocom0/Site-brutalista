@@ -162,3 +162,81 @@ header nav ul li a:hover {
     font-size: 14px;
     color: #666;
 }
+/* ====== RESPONSIVO ====== */
+@media (max-width: 1024px) {
+    .home h1 {
+        font-size: 60px;
+    }
+
+    .projetos .card {
+        max-width: 300px;
+    }
+
+    .sobre .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .frase p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .projetos h2,
+    .sobre h2 {
+        font-size: 40px;
+    }
+
+    .projetos .card {
+        max-width: 90%;
+    }
+
+    .sobre .sobre-content img {
+        width: 250px;
+    }
+
+    .sobre .sobre-content p {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        gap: 15px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .frase p {
+        font-size: 18px;
+    }
+
+    .projetos h2,
+    .sobre h2 {
+        font-size: 32px;
+    }
+
+    .sobre .sobre-content img {
+        width: 200px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+}
