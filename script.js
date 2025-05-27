@@ -52,3 +52,59 @@ gsap.from(".sobre .sobre-content p", {
   ease: "power2.out",
   delay: 0.3
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  // Animações de rolagem com GSAP
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".texto-quebrado h2", {
+    scrollTrigger: ".texto-quebrado h2",
+    y: 50,
+    opacity: 0,
+    duration: 1
+  });
+
+  gsap.from(".texto-quebrado p", {
+    scrollTrigger: ".texto-quebrado p",
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.3
+  });
+
+  gsap.from(".projetos h2", {
+    scrollTrigger: ".projetos h2",
+    y: 50,
+    opacity: 0,
+    duration: 1
+  });
+
+  gsap.from(".cards .card", {
+    scrollTrigger: ".cards",
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.3
+  });
+
+  gsap.from(".sobre h2", {
+    scrollTrigger: ".sobre h2",
+    y: 50,
+    opacity: 0,
+    duration: 1
+  });
+
+  gsap.from(".sobre-content", {
+    scrollTrigger: ".sobre-content",
+    y: 50,
+    opacity: 0,
+    duration: 1
+  });
+});

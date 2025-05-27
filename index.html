@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link rel="icon" type="image/png" href="img/favicon_fortes.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_fortes.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_fortes.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_fortes.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FORTES</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORTES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon_fortes.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ====== NAVBAR ====== -->
-  <header>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <nav id="nav">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-      </ul>
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="nav-links" id="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
     </nav>
-  </header>
+</header>
 
-  <!-- ====== HERO COM VÍDEO ====== -->
-  <section id="inicio" class="hero">
+<!-- ===== HERO COM VÍDEO ===== -->
+<section class="hero">
     <video autoplay muted loop playsinline class="bg-video">
-      <source src="img/logo_video.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
+        <source src="img/logo_video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
     </video>
-    <div class="frase">
-      <p>Entre becos e algoritmos. Uma anomalia elegante, letal, obcecada.</p>
-    </div>
-  </section>
+</section>
 
-  <!-- ====== PROJETOS ====== -->
-  <section id="projetos" class="projetos" data-aos="fade-up">
-    <h2>PROJETOS</h2>
+<!-- ===== SOBRE ===== -->
+<section id="sobre" class="sobre">
+    <div class="sobre-content" data-aos="fade-up">
+        <img src="img/sobre.jpg" alt="Foto Fortes">
+        <div>
+            <h2><strong>As pessoas me chamam de Fortes.</strong></h2>
+            <p>Não cheguei até aqui suavizando a realidade ou enfeitando palavras. Quando a gente limpa tudo que é excessivo e inútil, sobra o essencial: resultado.</p>
+            <p>Minha vida não foi um caminho de flores — foi um campo de batalha onde o tempo nunca para e o erro custa caro. Ali, entre a pressão e o caos, aprendi que ganhar não é uma opção, é uma guerra silenciosa.</p>
+            <p>Eu domino a performance e as métricas, mas também movimento ideias, comunicações e marcas — tudo junto, tudo conectado. Porque resultado verdadeiro não nasce da fragmentação, nasce da visão multidisciplinar que não foge do confronto, mas avança.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJETOS ===== -->
+<section id="projetos" class="projetos">
+    <h2 data-aos="fade-up">PROJETOS</h2>
     <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <img src="img/itens.jpg" alt="Projeto 1">
-        <h3>Projeto em Destaque</h3>
-        <p>Criações que desafiam a lógica e a percepção.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="img/itens.jpg" alt="Projeto 2">
-        <h3>Design Futurista</h3>
-        <p>Explorando o limiar entre arte, tecnologia e estética.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="img/itens.jpg" alt="Projeto 3">
-        <h3>Identidade Visual</h3>
-        <p>Marcas que deixam uma impressão forte e inesquecível.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- ====== SOBRE ====== -->
-  <section id="sobre" class="sobre" data-aos="fade-up">
-    <h2>SOBRE</h2>
-    <div class="sobre-content">
-      <img src="img/sobre.jpg" alt="Sobre Fortes" data-aos="fade-right">
-      <p data-aos="fade-left">
-        Um menino observa, silencioso, o mundo desmoronar em câmera lenta. Mãos sujas de graxa. Copos quebrados no chão. Discussões abafadas pela parede fina. O cheiro de álcool misturado com o cheiro metálico da oficina.<br><br>
-        Crescer foi entender que o mundo é uma trama mal escrita para quem aceita os papéis secundários. FORTES não nasceu. Foi arquitetado.<br><br>
-        Entre becos e algoritmos. Entre música, códigos, livros proibidos e planilhas. Se tornou aquilo que o mundo não queria que ele fosse: uma anomalia elegante, letal, obcecada.
-      </p>
-    </div>
-  </section>
+        <div class="card" data-aos="fade-up">
+            <h3>Açaí da Praça</h3>
+            <p>Transformei uma unidade do Açaí da Praça na periferia em uma rede com 3 lojas e em processo de franquia.</p>
+        </div>
 
-  <!-- ====== FOOTER ====== -->
-  <footer data-aos="fade-up">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Raízes do Som</h3>
+            <p>Levei a Raízes do Som da garagem para uma escola completa com dois andares e seis salas.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Sweet Cookies</h3>
+            <p>Fiz da Sweet Cookies uma máquina de vendas, saindo da cozinha de casa para mais de 40 pedidos diários.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Terrazza Rooftop</h3>
+            <p>Conduzi o Terrazza Rooftop a dominar o digital globalmente, iniciando sua expansão internacional.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Estúdios de Tattoo</h3>
+            <p>Atendi do zero todos os estúdios mais populares da minha região, alguns deles hoje com mais de cinco artistas na casa.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <h3>Odisseia das Flores</h3>
+            <p>Produzi artística e executivamente grupos como Odisseia das Flores, que já apareceram na Globo e em outros canais populares.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+            <h3>Cyrela e Namour</h3>
+            <p>Gerei milhares de leads para as maiores incorporadoras de SP, com a venda de mais de oito condomínios de alto padrão.</p>
+        </div>
+    </div>
+
+    <div class="btn-mentoria" data-aos="fade-up">
+        <a href="#">Quero Mentoria / Consultoria Agora</a>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
     <p>&copy; 2025 FORTES. Todos os direitos reservados.</p>
-  </footer>
+</footer>
 
-  <!-- ====== JS PARA MENU ====== -->
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-      menuToggle.classList.toggle('open');
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        toggle.classList.toggle('active');
     });
-  </script>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: true,
-    });
-  </script>
+</script>
 
 </body>
 </html>
