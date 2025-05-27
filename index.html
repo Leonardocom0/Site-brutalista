@@ -1,61 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FORTES</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORTES</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animações ao rolar) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <img src="img/fortes_logo.jpg" alt="Logo Fortes" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+    <!-- ===== HEADER COM MENU ===== -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="home" class="home">
-    <h1>FORTES</h1>
-    <p>Entre becos e algoritmos. Uma anomalia elegante, letal, obcecada.</p>
-  </section>
+    <!-- ===== HERO COM VÍDEO ===== -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="img/logo_video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </section>
 
-  <section id="projetos" class="projetos">
-    <h2>PROJETOS</h2>
-    <div class="card">
-      <img src="img/itens.jpg" alt="Projeto 1">
-      <h3>Projeto em Destaque</h3>
-      <p>Criações que desafiam a lógica e os padrões.</p>
+    <!-- ===== FRASE ABAIXO DO VÍDEO ===== -->
+    <div class="frase">
+        <p>Entre becos e algoritmos. Uma anomalia elegante, letal, obcecada.</p>
     </div>
-  </section>
 
-  <section id="sobre" class="sobre">
-    <h2>SOBRE</h2>
-    <div class="sobre-content">
-      <img src="img/sobre.jpg" alt="Sobre Fortes">
-      <p>
-        Um menino observa, silencioso, o mundo desmoronar em câmera lenta.
-        Mãos sujas de graxa. Copos quebrados no chão. Discussões abafadas pela parede fina.
-        O cheiro de álcool misturado com o cheiro metálico da oficina.<br><br>
-        Crescer foi entender que o mundo é uma trama mal escrita para quem aceita os papéis secundários.
-        FORTES não nasceu. Foi arquitetado.<br><br>
-        Entre becos e algoritmos. Entre música, códigos, livros proibidos e planilhas.
-        Se tornou aquilo que o mundo não queria que ele fosse: uma anomalia elegante, letal, obcecada.
-      </p>
-    </div>
-  </section>
+    <!-- ====== PROJETOS ====== -->
+    <section id="projetos" class="projetos">
+        <h2 data-aos="fade-up">PROJETOS</h2>
+        <div class="cards">
 
-  <footer>
-    <p>&copy; 2025 FORTES. Todos os direitos reservados.</p>
-  </footer>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/itens.jpg" alt="Projeto 1">
+                <h3>Projeto em Destaque</h3>
+                <p>Criações que desafiam a visão e a percepção.</p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <img src="img/itens.jpg" alt="Projeto 2">
+                <h3>Design Futurista</h3>
+                <p>Explorando o limiar entre arte, tecnologia e estética.</p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <img src="img/itens.jpg" alt="Projeto 3">
+                <h3>Identidade Visual</h3>
+                <p>Marcas que deixam uma impressão forte e inesquecível.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== SOBRE ====== -->
+    <section id="sobre" class="sobre">
+        <h2 data-aos="fade-up">SOBRE</h2>
+        <div class="sobre-content">
+            <img src="img/sobre.jpg" alt="Sobre Fortes" data-aos="fade-right">
+            <p data-aos="fade-left">
+                Um menino observa, silencioso, o mundo desmoronar em câmera lenta.
+                Mãos sujas de graxa. Copos quebrados no chão. Discussões abafadas pela parede fina.
+                O cheiro de álcool misturado com o cheiro metálico da oficina.<br><br>
+                Crescer foi entender que o mundo é uma trama mal escrita para quem aceita os papéis secundários.
+                FORTES não nasceu. Foi arquitetado.<br><br>
+                Entre becos e algoritmos. Entre música, códigos, livros proibidos e planilhas.
+                Se tornou aquilo que o mundo não queria que ele fosse: uma anomalia elegante, letal, obcecada.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <p>&copy; 2025 FORTES. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ===== AOS Animation Script ===== -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 
 </body>
 </html>
