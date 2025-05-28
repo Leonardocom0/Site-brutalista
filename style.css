@@ -270,34 +270,3 @@ body::after {
         text-align: center;
     }
 }
-/* Fundo Abstrato - Estático e Visível */
-.info-extra::before,
-.info-extra::after,
-.bloco-texto-final::before,
-.bloco-texto-final::after {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 900px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.3;
-    z-index: 1;
-    transform: none;
-    animation: none;
-    filter: none;
-}
-
-.info-extra::before,
-.bloco-texto-final::before {
-    background-image: url('img/abstrato_1.png');
-    top: -100px;
-    left: -150px;
-}
-
-.info-extra::after,
-.bloco-texto-final::after {
-    background-image: url('img/abstrato_2.png');
-    bottom: -100px;
-    right: -150px;
-}
