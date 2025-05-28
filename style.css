@@ -352,3 +352,82 @@ body::after {
     color: #888;
     padding-top: 40px;
 }
+/* Linha de Transição Brutalista */
+.linha-transicao {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff88, transparent);
+    opacity: 0.3;
+    margin: 35px 0;
+    position: relative;
+}
+
+.linha-transicao::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #f0f, transparent);
+    opacity: 0.05;
+}
+
+/* Texto acima da linha */
+.mini-transicao {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .proposta ul li,
+    .info-content p,
+    .bloco-content p,
+    .cta p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+
+    .proposta {
+        padding: 80px 5%;
+    }
+
+    .info-content,
+    .bloco-content {
+        padding: 30px 20px;
+    }
+
+    .cta {
+        padding: 80px 5% 50px 5%;
+    }
+
+    .cta .btn {
+        margin-bottom: 30px;
+    }
+
+    .contato {
+        padding-top: 20px;
+    }
+
+    .mini-transicao {
+        font-size: 0.8rem;
+    }
+
+    .linha-transicao {
+        margin: 30px 0;
+    }
+}
